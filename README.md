@@ -58,12 +58,12 @@ Input the reference model path here:
 ```bash
 declare -A ref_model_files=(
   ["none"]=None
-  ["personachat_extend_seq2seq"]="PATH/TO/THE/REFERENCE/MODEL"
+  ["REF_MODEL_KEY"]="PATH/TO/THE/REFERENCE/MODEL"
 )
 ```
 and use it by setting the variable `ref_model`:
 ```bash
-ref_model=personachat_extend_seq2seq
+ref_model=REF_MODEL_KEY
 ```
 
 #### 3. Running the framework
