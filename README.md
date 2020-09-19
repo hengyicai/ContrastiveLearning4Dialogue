@@ -8,7 +8,7 @@ Running scripts can be found in `projects/contrastive_learning`.
 
 ## Framework Overview
 
-TODO
+![method_overview](misc/ModelArc.png)
 
 ## Requirements
 - Python3
