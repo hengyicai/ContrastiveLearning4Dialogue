@@ -6,6 +6,9 @@ This codebase is built upon the [ParlAI](https://parl.ai/) project (Thanks for t
 Check `parlai/agents/contrastive_learning` for framework implementations.
 Running scripts can be found in `projects/contrastive_learning`.
 
+## Framework Overview
+
+TODO
 
 ## Requirements
 - Python3
