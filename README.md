@@ -2,7 +2,7 @@
 
 This repo contains preliminary code of the EMNLP2020 paper named "[Group-wise Contrastive Learning for Neural Dialogue Generation](https://arxiv.org/abs/2009.07543)".
 
-This codebase is built upon the [ParlAI](https://parl.ai/) project. 
+This codebase is built upon the [ParlAI](https://parl.ai/) project (Thanks for their pioneering contributions on developing such a great conversational platform!). 
 Check `parlai/agents/contrastive_learning` for framework implementations.
 Running scripts can be found in `projects/contrastive_learning`.
 
@@ -13,14 +13,35 @@ Running scripts can be found in `projects/contrastive_learning`.
 
 Dependencies of the core modules are listed in requirement.txt.
 
-## Dataset
-TBA
-
 ## Installing
 ```
 git clone git@github.com:hengyicai/ContrastiveLearning4Dialogue.git ~/ContrastiveLearning4Dialogue
 cd ~/ContrastiveLearning4Dialogue; python setup.py develop
 echo "export PARLAI_HOME=~/ContrastiveLearning4Dialogue" >> ~/.bashrc; source ~/.bashrc
+```
+
+## Dataset
+Download [PersonaChat](https://drive.google.com/file/d/1E2Rp5G9Mrljbih7P9dMO9-EKxhulJVYd/view?usp=sharing)/[OpenSubtitles](https://drive.google.com/file/d/1FTlPZ31c5qdSOa0S4sqkW44Ohg0SuumY/view?usp=sharing)/[Douban](https://drive.google.com/file/d/1jjv64eA7Hvv_3J54JOuYdEyDz1Pc3jIo/view?usp=sharing) and untar them to `${PARLAI_HOME}/data/` as:
+```bash
+data
+├── DoubanConversaionCorpus
+│   ├── douban.embed.vec
+│   ├── test.txt
+│   ├── train.txt
+│   ├── train.txt.lengths
+│   └── valid.txt
+├── OpenSubExtend
+│   ├── opensub_extend.embed.vec
+│   ├── test.txt
+│   ├── train.txt
+│   ├── train.txt.lengths
+│   └── valid.txt
+└── PersonaChatExtend
+    ├── personachat_extend.embed.vec
+    ├── test.txt
+    ├── train.txt
+    ├── train.txt.lengths
+    └── valid.txt
 ```
 
 ## Running
@@ -76,3 +97,5 @@ export CUDA_VISIBLE_DEVICES=0; train_model cl_seq2seq to_minimize personachat_ex
 
 Start training by `bash projects/contrastive_learning/shell/run.sh`
 
+## Contact
+Please reach me via my email (caihengyi at ict dot ac dot cn) if there is anything unclear.
