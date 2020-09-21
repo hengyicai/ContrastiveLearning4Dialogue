@@ -374,7 +374,7 @@ def _filter_normalize(scores, neg_threshold, pos_threshold):
     return _soft_normalize(scores)
 
 
-def normalize_socre(scores, self_opt):
+def normalize_score(scores, self_opt):
     # scores: ~(0, 1)
     # return: ~(-1, 1)
     # ret_scores = torch.tanh(-3.0 + 6.0 * scores)  # ~(-1, 1)
