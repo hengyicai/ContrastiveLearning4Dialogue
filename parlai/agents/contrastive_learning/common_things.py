@@ -374,7 +374,7 @@ def _filter_normalize(scores, neg_threshold, pos_threshold):
     return _soft_normalize(scores)
 
 
-def normalize_socre(scores, self_opt):
+def normalize_score(scores, self_opt):
     # scores: ~(0, 1)
     # return: ~(-1, 1)
     # ret_scores = torch.tanh(-3.0 + 6.0 * scores)  # ~(-1, 1)
@@ -547,7 +547,7 @@ def _create_sample_batch(
     if samp_idx == NO_SAMPLING:
         crt_matching_scores = None
     else:
-        crt_matching_scores = normalize_socre(batch[scores_name][:, samp_idx], self_opt)  # ~(-1, 1)
+        crt_matching_scores = normalize_score(batch[scores_name][:, samp_idx], self_opt)  # ~(-1, 1)
 
     to_replace, to_restore = model_agent.sample_batchify_func(
         model_agent,
