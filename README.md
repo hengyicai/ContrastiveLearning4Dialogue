@@ -1,6 +1,6 @@
 # Group-wise Contrastive Learning for Neural Dialogue Generation
 
-This repo contains preliminary code of the EMNLP2020 paper named "[Group-wise Contrastive Learning for Neural Dialogue Generation](https://arxiv.org/abs/2009.07543)".
+This repo contains preliminary code of the EMNLP2020 paper (Findings) named "[Group-wise Contrastive Learning for Neural Dialogue Generation](https://arxiv.org/abs/2009.07543)".
 
 This codebase is built upon the [ParlAI](https://parl.ai/) project (Thanks for their pioneering contributions on developing such a great conversational platform!). 
 Check `parlai/agents/contrastive_learning` for framework implementations.
